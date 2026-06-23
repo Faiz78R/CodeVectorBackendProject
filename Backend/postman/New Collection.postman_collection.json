@@ -1,0 +1,141 @@
+{
+  "info": {
+    "_postman_id": "f87ddfc7-c392-4e5a-b5e4-47ac51e65302",
+    "name": "New Collection",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "46609586",
+    "_collection_link": "https://go.postman.co/collection/46609586-f87ddfc7-c392-4e5a-b5e4-47ac51e65302?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Adding Product",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"title\": \"Add Two Numbers\",\r\n    \"description\": \"Write a program that takes two integers as input and returns their sum.\",\r\n    \"difficulty\": \"easy\",\r\n    \"tags\": [\"array\"],\r\n    \"visibleTestCases\": [\r\n        {\r\n            \"input\": \"2 3\",\r\n            \"output\": \"5\",\r\n            \"explanation\": \"2 + 3 equals 5\"\r\n        },\r\n        {\r\n            \"input\": \"-1 5\",\r\n            \"output\": \"4\",\r\n            \"explanation\": \"-1 + 5 equals 4\"\r\n        }\r\n    ],\r\n    \"hiddenTestCases\": [\r\n        {\r\n            \"input\": \"10 20\",\r\n            \"output\": \"30\"\r\n        },\r\n        {\r\n            \"input\": \"100 250\",\r\n            \"output\": \"350\"\r\n        }\r\n    ],\r\n    \"startCode\": [\r\n        {\r\n            \"language\": \"C++\",\r\n            \"initialCode\": \"#include <iostream>\\nusing namespace std;\\n\\nint main() {\\n    int a, b;\\n    // Read input here\\n    cout << a + b;\\n    return 0;\\n}\"\r\n        },\r\n        {\r\n            \"language\": \"Java\",\r\n            \"initialCode\": \"import java.util.Scanner;\\n\\npublic class Main {\\n    public static void main(String[] args) {\\n        // Read input here\\n    }\\n}\"\r\n        },\r\n        {\r\n            \"language\": \"JavaScript\",\r\n            \"initialCode\": \"const readline = require('readline');\\n\\n// Complete input handling here\"\r\n        }\r\n    ],\r\n    \"referenceSolution\": [\r\n        {\r\n            \"language\": \"C++\",\r\n            \"completeCode\": \"#include <iostream>\\nusing namespace std;\\n\\nint main() {\\n    int a, b;\\n    cin >> a >> b;\\n    cout << a + b;\\n    return 0;\\n}\"\r\n        },\r\n        {\r\n            \"language\": \"Java\",\r\n            \"completeCode\": \"import java.util.Scanner;\\n\\npublic class Main {\\n    public static void main(String[] args) {\\n        Scanner sc = new Scanner(System.in);\\n        int a = sc.nextInt();\\n        int b = sc.nextInt();\\n        System.out.println(a + b);\\n    }\\n}\"\r\n        },\r\n        {\r\n            \"language\": \"JavaScript\",\r\n            \"completeCode\": \"const input = require('fs').readFileSync(0, 'utf-8').trim();\\nconst [a, b] = input.split(' ').map(Number);\\nconsole.log(a + b);\"\r\n        }\r\n    ]\r\n\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "localhost:4000/api/product",
+          "host": [
+            "localhost"
+          ],
+          "port": "4000",
+          "path": [
+            "api",
+            "product"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "get product by category",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"title\": \"Add Two Numbers\",\r\n    \"description\": \"Write a program that takes two integers as input and returns their sum.\",\r\n    \"difficulty\": \"easy\",\r\n    \"tags\": [\"array\"],\r\n    \"visibleTestCases\": [\r\n        {\r\n            \"input\": \"2 3\",\r\n            \"output\": \"5\",\r\n            \"explanation\": \"2 + 3 equals 5\"\r\n        },\r\n        {\r\n            \"input\": \"-1 5\",\r\n            \"output\": \"4\",\r\n            \"explanation\": \"-1 + 5 equals 4\"\r\n        }\r\n    ],\r\n    \"hiddenTestCases\": [\r\n        {\r\n            \"input\": \"10 20\",\r\n            \"output\": \"30\"\r\n        },\r\n        {\r\n            \"input\": \"100 250\",\r\n            \"output\": \"350\"\r\n        }\r\n    ],\r\n    \"startCode\": [\r\n        {\r\n            \"language\": \"C++\",\r\n            \"initialCode\": \"#include <iostream>\\nusing namespace std;\\n\\nint main() {\\n    int a, b;\\n    // Read input here\\n    cout << a + b;\\n    return 0;\\n}\"\r\n        },\r\n        {\r\n            \"language\": \"Java\",\r\n            \"initialCode\": \"import java.util.Scanner;\\n\\npublic class Main {\\n    public static void main(String[] args) {\\n        // Read input here\\n    }\\n}\"\r\n        },\r\n        {\r\n            \"language\": \"JavaScript\",\r\n            \"initialCode\": \"const readline = require('readline');\\n\\n// Complete input handling here\"\r\n        }\r\n    ],\r\n    \"referenceSolution\": [\r\n        {\r\n            \"language\": \"C++\",\r\n            \"completeCode\": \"#include <iostream>\\nusing namespace std;\\n\\nint main() {\\n    int a, b;\\n    cin >> a >> b;\\n    cout << a + b;\\n    return 0;\\n}\"\r\n        },\r\n        {\r\n            \"language\": \"Java\",\r\n            \"completeCode\": \"import java.util.Scanner;\\n\\npublic class Main {\\n    public static void main(String[] args) {\\n        Scanner sc = new Scanner(System.in);\\n        int a = sc.nextInt();\\n        int b = sc.nextInt();\\n        System.out.println(a + b);\\n    }\\n}\"\r\n        },\r\n        {\r\n            \"language\": \"JavaScript\",\r\n            \"completeCode\": \"const input = require('fs').readFileSync(0, 'utf-8').trim();\\nconst [a, b] = input.split(' ').map(Number);\\nconsole.log(a + b);\"\r\n        }\r\n    ]\r\n\r\n}"
+        },
+        "url": {
+          "raw": "localhost:4000/api/product?.search=Product&category=Electronics",
+          "host": [
+            "localhost"
+          ],
+          "port": "4000",
+          "path": [
+            "api",
+            "product"
+          ],
+          "query": [
+            {
+              "key": ".search",
+              "value": "Product"
+            },
+            {
+              "key": "category",
+              "value": "Electronics"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "get product and copy cursor",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"title\": \"Add Two Numbers\",\r\n    \"description\": \"Write a program that takes two integers as input and returns their sum.\",\r\n    \"difficulty\": \"easy\",\r\n    \"tags\": [\"array\"],\r\n    \"visibleTestCases\": [\r\n        {\r\n            \"input\": \"2 3\",\r\n            \"output\": \"5\",\r\n            \"explanation\": \"2 + 3 equals 5\"\r\n        },\r\n        {\r\n            \"input\": \"-1 5\",\r\n            \"output\": \"4\",\r\n            \"explanation\": \"-1 + 5 equals 4\"\r\n        }\r\n    ],\r\n    \"hiddenTestCases\": [\r\n        {\r\n            \"input\": \"10 20\",\r\n            \"output\": \"30\"\r\n        },\r\n        {\r\n            \"input\": \"100 250\",\r\n            \"output\": \"350\"\r\n        }\r\n    ],\r\n    \"startCode\": [\r\n        {\r\n            \"language\": \"C++\",\r\n            \"initialCode\": \"#include <iostream>\\nusing namespace std;\\n\\nint main() {\\n    int a, b;\\n    // Read input here\\n    cout << a + b;\\n    return 0;\\n}\"\r\n        },\r\n        {\r\n            \"language\": \"Java\",\r\n            \"initialCode\": \"import java.util.Scanner;\\n\\npublic class Main {\\n    public static void main(String[] args) {\\n        // Read input here\\n    }\\n}\"\r\n        },\r\n        {\r\n            \"language\": \"JavaScript\",\r\n            \"initialCode\": \"const readline = require('readline');\\n\\n// Complete input handling here\"\r\n        }\r\n    ],\r\n    \"referenceSolution\": [\r\n        {\r\n            \"language\": \"C++\",\r\n            \"completeCode\": \"#include <iostream>\\nusing namespace std;\\n\\nint main() {\\n    int a, b;\\n    cin >> a >> b;\\n    cout << a + b;\\n    return 0;\\n}\"\r\n        },\r\n        {\r\n            \"language\": \"Java\",\r\n            \"completeCode\": \"import java.util.Scanner;\\n\\npublic class Main {\\n    public static void main(String[] args) {\\n        Scanner sc = new Scanner(System.in);\\n        int a = sc.nextInt();\\n        int b = sc.nextInt();\\n        System.out.println(a + b);\\n    }\\n}\"\r\n        },\r\n        {\r\n            \"language\": \"JavaScript\",\r\n            \"completeCode\": \"const input = require('fs').readFileSync(0, 'utf-8').trim();\\nconst [a, b] = input.split(' ').map(Number);\\nconsole.log(a + b);\"\r\n        }\r\n    ]\r\n\r\n}"
+        },
+        "url": {
+          "raw": "localhost:4000/api/product",
+          "host": [
+            "localhost"
+          ],
+          "port": "4000",
+          "path": [
+            "api",
+            "product"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "search product by cursor",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"title\": \"Add Two Numbers\",\r\n    \"description\": \"Write a program that takes two integers as input and returns their sum.\",\r\n    \"difficulty\": \"easy\",\r\n    \"tags\": [\"array\"],\r\n    \"visibleTestCases\": [\r\n        {\r\n            \"input\": \"2 3\",\r\n            \"output\": \"5\",\r\n            \"explanation\": \"2 + 3 equals 5\"\r\n        },\r\n        {\r\n            \"input\": \"-1 5\",\r\n            \"output\": \"4\",\r\n            \"explanation\": \"-1 + 5 equals 4\"\r\n        }\r\n    ],\r\n    \"hiddenTestCases\": [\r\n        {\r\n            \"input\": \"10 20\",\r\n            \"output\": \"30\"\r\n        },\r\n        {\r\n            \"input\": \"100 250\",\r\n            \"output\": \"350\"\r\n        }\r\n    ],\r\n    \"startCode\": [\r\n        {\r\n            \"language\": \"C++\",\r\n            \"initialCode\": \"#include <iostream>\\nusing namespace std;\\n\\nint main() {\\n    int a, b;\\n    // Read input here\\n    cout << a + b;\\n    return 0;\\n}\"\r\n        },\r\n        {\r\n            \"language\": \"Java\",\r\n            \"initialCode\": \"import java.util.Scanner;\\n\\npublic class Main {\\n    public static void main(String[] args) {\\n        // Read input here\\n    }\\n}\"\r\n        },\r\n        {\r\n            \"language\": \"JavaScript\",\r\n            \"initialCode\": \"const readline = require('readline');\\n\\n// Complete input handling here\"\r\n        }\r\n    ],\r\n    \"referenceSolution\": [\r\n        {\r\n            \"language\": \"C++\",\r\n            \"completeCode\": \"#include <iostream>\\nusing namespace std;\\n\\nint main() {\\n    int a, b;\\n    cin >> a >> b;\\n    cout << a + b;\\n    return 0;\\n}\"\r\n        },\r\n        {\r\n            \"language\": \"Java\",\r\n            \"completeCode\": \"import java.util.Scanner;\\n\\npublic class Main {\\n    public static void main(String[] args) {\\n        Scanner sc = new Scanner(System.in);\\n        int a = sc.nextInt();\\n        int b = sc.nextInt();\\n        System.out.println(a + b);\\n    }\\n}\"\r\n        },\r\n        {\r\n            \"language\": \"JavaScript\",\r\n            \"completeCode\": \"const input = require('fs').readFileSync(0, 'utf-8').trim();\\nconst [a, b] = input.split(' ').map(Number);\\nconsole.log(a + b);\"\r\n        }\r\n    ]\r\n\r\n}"
+        },
+        "url": {
+          "raw": "localhost:4000/api/product?cursor=6a3a1e5626ab073daf8449a9",
+          "host": [
+            "localhost"
+          ],
+          "port": "4000",
+          "path": [
+            "api",
+            "product"
+          ],
+          "query": [
+            {
+              "key": "cursor",
+              "value": "6a3a1e5626ab073daf8449a9"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "snapshot pagination",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    }
+  ]
+}
