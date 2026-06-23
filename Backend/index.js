@@ -6,6 +6,10 @@ import router from './routes/productroute.js'
 const app= express()
 
 app.use(express.json())
+
+app.get("/",(req,res)=>{
+    res.send("Backend API RUNNING")
+})
 app.use('/api/product',router)
 const PORT= process.env.PORT || 6000
 app.listen(PORT,()=>{
